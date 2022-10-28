@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-//the schemas i.e users table with firstname, lastname column
-
 const userSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,

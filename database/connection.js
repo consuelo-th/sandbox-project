@@ -2,6 +2,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 
 let connectionUrl = "";
+
 //is the app app on production or development
 if (process.env.ENVIRONMENT === "development") {
   connectionUrl = "mongodb://localhost:27017/consuelo";
