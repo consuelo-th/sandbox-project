@@ -810,6 +810,11 @@ video {
   width: 8rem;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-11\/12{
   width: 91.666667%;
 }
