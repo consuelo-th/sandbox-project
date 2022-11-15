@@ -7,25 +7,31 @@ const verification = document.getElementById("verification");
 const modal = document.getElementById("modal")
 
 
-
-numberSubmit.addEventListener("click", (e) => {
+mainContent.addEventListener("click", (e) => {
     e.preventDefault()
-    numberInput.classList.add("hidden")
-    otpInput.classList.toggle("hidden")
+    mainContent.classList.toggle("hidden")
+    numberInput.classList.toggle("hidden")
+    verification.classList.toggle("hidden")
+    verification.classList.toggle("flex")
+})
 
-    console.log('remove number')
+numberInput.addEventListener("click", (e) => {
+    e.preventDefault();
+    numberInput.classList.toggle("hidden")
+    otpInput.classList.toggle("hidden")
 })
 
 otpSubmit.addEventListener("click", (e) => {
     e.preventDefault();
+    otpInput.classList.toggle("hidden")
     modal.classList.toggle("hidden")
 })
 
 
 modal.addEventListener("click", (e) => {
-    otpInput.classList.toggle("hidden")
     modal.classList.toggle("hidden");
     mainContent.classList.toggle("hidden");
     mainContent.classList.toggle("flex");
+    verification.classList.toggle("hidden")
 
 })
